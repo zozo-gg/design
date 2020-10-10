@@ -6,118 +6,367 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>ZOZO.GG | ZOMBIE ZONE : Left 4 Dead 2, Team Fortress 2, HLstatsX, SourceBans, Commfort Чат</title>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="wrapper">
-		<header class="header menu">
+		<header class="header">
 			<div class="header__inner">
-				<div class="close-menu">
-					<img src="images/cross.svg" alt="">
+				<div class="burger">
+					<div class="burger__line burger__line_top"></div>
+					<div class="burger__line burger__line_center"></div>
+					<div class="burger__line burger__line_bottom"></div>
 				</div>
-				<div class="header-top">
-					<a href="#" class="logo">
-						<div class="logo-animation">
-						</div>
-						<img src="images/logo-url.png" alt="">
-					</a>
-					<div class="social social_header">
-						<ul class="social__list">
-							<li class="social__item social__item_vk">
-								<a href="#">
-									<img src="images/social/vk.svg" alt="">
-								</a>
-							</li>
-							<li class="social__item social__item_steam">
-								<a href="#">
-									<img src="images/social/steam.svg" alt="">
-								</a>
-							</li>
-							<li class="social__item social__item_tube">
-								<a href="#">
-									<img src="images/social/youtube.svg" alt="">
-								</a>
-							</li>
-							<li class="social__item social__item_twitch">
-								<a href="#">
-									<img src="images/social/twitch.svg" alt="">
-								</a>
-							</li>
-							<li class="social__item social__item_twitter">
-								<a href="#">
-									<img src="images/social/twitter.svg" alt="">
-								</a>
-							</li>
-						</ul>
-					</div>	
-				</div>
-				<div class="header-bottom">
-					<nav class="main-nav">
-						<ul class="main-nav__list">
-							<li class="main-nav__item">
-								<a href="#" class="main-nav__link">
-									новости
-								</a>
-							</li>
-							<li class="main-nav__item">
-								<a href="#" class="main-nav__link">
-									серверы
-								</a>
-							</li>
-							<li class="main-nav__item">
-								<a href="#" class="main-nav__link">
-									о нас
-								</a>
-							</li>
-							<li class="main-nav__item">
-								<a href="#" class="main-nav__link">
-									форум
-								</a>
-							</li>
-						</ul>
-					</nav>
-					<div class="vips">
-						<div class="vips__item">
-							<a href="#">VIP</a>
-						</div>
-						<div class="vips__item">
-							<a href="#">Free VIP</a>
-						</div>
+				<a href="#" class="logo logo_desktop">
+					<div class="logo-animation">
 					</div>
-					<div class="main-search">
-						<form action="">
-							<input type="text" placeholder="Поиск по сайту">
-						</form>
-					</div>
-				</div>
+					<img src="images/logo-url.png" alt="">
+				</a>
+				<a href="#" class="logo logo_mobile">
+					<img src="images/logo-mobile.png" alt="">
+				</a>
 			</div>
 		</header>
+
+		<div class="menu">
+			<div class="menu__inner">
+				<nav class="main-nav">
+					<ul class="main-nav__list">
+						<li class="main-nav__item main-nav__item_parent">
+							<a href="#" class="main-nav__link">
+								новости
+							</a>
+							<div class="dropdown__trigger">
+								<img src="images/arrow.svg" alt="">
+							</div>
+							<div class="dropdown">
+								<div class="dropdown__inner">
+									<ul class="dropdown__list">
+										<li class="dropdown__item">
+											<a href="#" class="dropdown__link">
+												Информация
+											</a>
+										</li>
+										<li class="dropdown__item dropdown__item_parent">
+											<a href="#" class="dropdown__link">
+												Left 4 Dead
+											</a>
+											<div class="dropdown__item-trigger">
+												<img src="images/arrow.svg" alt="">
+											</div>
+											<div class="dropdown">
+												<div class="dropdown__inner">
+													<ul class="dropdown__list">
+														<li class="dropdown__item">
+															<a href="#" class="dropdown__link">Скачать</a>
+														</li>
+														<li class="dropdown__item">
+															<a href="#" class="dropdown__link">Патчи</a>
+														</li>
+														<li class="dropdown__item">
+															<a href="#" class="dropdown__link">Карты</a>
+														</li>
+														<li class="dropdown__item">
+															<a href="#" class="dropdown__link">Модификации</a>
+														</li>
+														<li class="dropdown__item">
+															<a href="#" class="dropdown__link">Видео</a>
+														</li>
+														<li class="dropdown__item">
+															<a href="#" class="dropdown__link">Картинки</a>
+														</li>
+														<li class="dropdown__item">
+															<a href="#" class="dropdown__link">Разное</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class="dropdown__item dropdown__item_parent">
+											<a href="#" class="dropdown__link">
+												Left 4 Dead 2
+											</a>
+											<div class="dropdown__item-trigger">
+												<img src="images/arrow.svg" alt="">
+											</div>
+											<div class="dropdown">
+												<div class="dropdown__inner">
+													<ul class="dropdown__list">
+														<li class="dropdown__item">
+															<a href="#" class="dropdown__link">Скачать</a>
+														</li>
+														<li class="dropdown__item">
+															<a href="#" class="dropdown__link">Патчи</a>
+														</li>
+														<li class="dropdown__item">
+															<a href="#" class="dropdown__link">Карты</a>
+														</li>
+														<li class="dropdown__item">
+															<a href="#" class="dropdown__link">Модификации</a>
+														</li>
+														<li class="dropdown__item">
+															<a href="#" class="dropdown__link">Видео</a>
+														</li>
+														<li class="dropdown__item">
+															<a href="#" class="dropdown__link">Картинки</a>
+														</li>
+														<li class="dropdown__item">
+															<a href="#" class="dropdown__link">Разное</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										
+										<li class="dropdown__item">
+											<a href="#" class="dropdown__link">
+												Другие игры
+											</a>
+										</li>
+										<li class="dropdown__item dropdown__item_parent">
+											<a href="#" class="dropdown__link">
+												Средства связи
+											</a>
+											<div class="dropdown__item-trigger">
+												<img src="images/arrow.svg" alt="">
+											</div>
+											<div class="dropdown">
+												<div class="dropdown__inner">
+													<ul class="dropdown__list">
+														<li class="dropdown__item">
+															<a href="#" class="dropdown__link">CommFort Чат</a>
+														</li>
+														<li class="dropdown__item">
+															<a href="#" class="dropdown__link">TeamSpeak</a>
+														</li>
+														<li class="dropdown__item">
+															<a href="#" class="dropdown__link">DC++</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="main-nav__item main-nav__item_parent">
+							<a href="#" class="main-nav__link">
+								серверы
+							</a>
+							<div class="dropdown__trigger">
+								<img src="images/arrow.svg" alt="">
+							</div>
+
+							<div class="dropdown">
+								<div class="dropdown__inner">
+									<ul class="dropdown__list">
+										<li class="dropdown__item">
+											<a href="#" class="dropdown__link">
+												Особенности
+											</a>
+										</li>
+										<li class="dropdown__item">
+											<a href="#" class="dropdown__link">
+												VIP / Бонусы
+											</a>
+										</li>
+										<li class="dropdown__item">
+											<a href="#" class="dropdown__link">
+												Free VIP
+											</a>
+										</li>
+										<li class="dropdown__item">
+											<a href="#" class="dropdown__link">
+												Статистика
+											</a>
+										</li>
+										<li class="dropdown__item">
+											<a href="#" class="dropdown__link">
+												Баны
+											</a>
+										</li>
+										<li class="dropdown__item">
+											<a href="#" class="dropdown__link">
+												Top 40
+											</a>
+										</li>
+										<li class="dropdown__item">
+											<a href="#" class="dropdown__link">
+												Юзербары
+											</a>
+										</li>
+										<li class="dropdown__item">
+											<a href="#" class="dropdown__link">
+												Charger Race
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="main-nav__item main-nav__item_parent">
+							<a href="#" class="main-nav__link">
+								о нас
+							</a>
+							<div class="dropdown__trigger">
+								<img src="images/arrow.svg" alt="">
+							</div>
+							<div class="dropdown">
+								<div class="dropdown__inner">
+									<ul class="dropdown__list">
+										<li class="dropdown__item">
+											<a href="#" class="dropdown__link">
+												Наша команда
+											</a>
+										</li>
+										<li class="dropdown__item">
+											<a href="#" class="dropdown__link">
+												История создания
+											</a>
+										</li>
+										<li class="dropdown__item">
+											<a href="#" class="dropdown__link">
+												Обратная связь
+											</a>
+										</li>
+										<li class="dropdown__item">
+											<a href="#" class="dropdown__link">
+												Вакансии
+											</a>
+										</li>
+										<li class="dropdown__item">
+											<a href="#" class="dropdown__link">
+												Помощь проекту
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="main-nav__item">
+							<a href="#" class="main-nav__link">
+								форум
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="vips">
+					<div class="vips__item">
+						<a href="#">VIP</a>
+					</div>
+					<div class="vips__item">
+						<a href="#">Free VIP</a>
+					</div>
+				</div>
+				<div class="main-search">
+					<form action="">
+						<input type="text" placeholder="Поиск по сайту">
+					</form>
+				</div>
+				<div class="social social_header">
+					<ul class="social__list">
+						<li class="social__item social__item_vk">
+							<a href="#">
+								<img src="images/social/vk.svg" alt="">
+							</a>
+						</li>
+						<li class="social__item social__item_steam">
+							<a href="#">
+								<img src="images/social/steam.svg" alt="">
+							</a>
+						</li>
+						<li class="social__item social__item_tube">
+							<a href="#">
+								<img src="images/social/youtube.svg" alt="">
+							</a>
+						</li>
+						<li class="social__item social__item_twitch">
+							<a href="#">
+								<img src="images/social/twitch.svg" alt="">
+							</a>
+						</li>
+						<li class="social__item social__item_twitter">
+							<a href="#">
+								<img src="images/social/twitter.svg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="close-menu">
+				<img src="images/cross.svg" alt="">
+			</div>	
+		</div>
 
 		<div class="bg-element"></div>
-
-		<header class="header-mobile">
-			<div class="burger">
-				<div class="burger__line burger__line_top"></div>
-				<div class="burger__line burger__line_center"></div>
-				<div class="burger__line burger__line_bottom"></div>
-			</div>
-			<a href="#" class="logo logo_mobile">
-				<img src="images/logo-mobile.png" alt="">
-			</a>
-		</header>
 
 		<main class="main">
 			<div class="container">
 				<h2>left for dead</h2>
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolore sit saepe aliquam nulla doloremque maxime assumenda expedita corporis accusantium est adipisci repudiandae repellat laborum inventore laudantium. Eum distinctio excepturi perferendis odit voluptatum, illum, repellat delectus accusantium quasi optio inventore repudiandae minima! Ipsa explicabo nulla eum autem ratione inventore enim tempore voluptas reprehenderit distinctio voluptatibus dolorem earum, dicta recusandae odio officiis dolores perspiciatis at, quaerat beatae optio? Placeat harum iusto inventore ad sed distinctio nostrum eum. Autem tempore vel tempora hic, dicta fugiat temporibus laudantium commodi rerum. Sed necessitatibus exercitationem, qui, voluptas ab pariatur id quos autem aperiam tempore explicabo facere quis a fugiat dolores illo neque cum, nemo illum ullam minus mollitia saepe facilis molestiae. Sint rerum velit, soluta quae dolorem laudantium odit hic, ad sapiente dolor facere, sequi maiores ratione architecto ullam dolores minus. Laudantium, error, quo. Officia impedit adipisci natus harum consectetur provident deleniti non ut recusandae, quasi sint saepe laboriosam ea omnis nihil commodi a esse atque voluptates cumque. Quibusdam nam, obcaecati corrupti omnis officiis velit molestias ullam officia architecto doloribus error laborum eum repellat tempora asperiores laboriosam atque magni dolorem eius sed facilis! Officia, explicabo amet. Reprehenderit delectus voluptates ratione, neque, fugit sapiente necessitatibus magni, rerum exercitationem, vel tempora quasi dolore. Ipsam consectetur perspiciatis porro libero magnam voluptas! Animi, quas corporis consequatur a eos beatae impedit. Placeat voluptates fuga aspernatur voluptas recusandae qui, itaque totam deserunt expedita at autem, est a vitae non quasi illo labore ad distinctio iusto dolores? Ea tempore commodi dignissimos debitis consequuntur incidunt dolorum ut reiciendis nulla minus inventore repellat non ipsum, hic similique ullam quia maxime consequatur perspiciatis delectus voluptas impedit deleniti dolorem neque. Ipsam, nulla fugiat iusto, velit officiis quisquam explicabo unde ab omnis suscipit distinctio earum. Accusamus atque nostrum, sint quisquam consequatur ab nihil in commodi, culpa consectetur. Ducimus eum voluptate voluptatem hic totam magnam distinctio molestias, provident quas mollitia, eos sit vel minus dolorem quia modi numquam, nemo rerum, ipsa quam veritatis eaque natus quis rem. Hic quidem laboriosam, nostrum. Aliquid, placeat ipsum fugit nam cupiditate alias magni accusamus optio, doloribus dolorum expedita obcaecati velit nulla a id esse ut soluta non odit deserunt animi ducimus reiciendis dignissimos cum ea. Porro minima recusandae consectetur facere iusto tempora corporis dolores dolorem magnam rem delectus earum, asperiores aperiam dolor vel? Distinctio quod, at, modi a neque non explicabo repudiandae. Expedita in laborum vero excepturi, facere minus, inventore praesentium, dignissimos, ab velit hic voluptas dolore aliquid doloremque cumque libero similique voluptatibus maxime perferendis deleniti fuga quasi exercitationem pariatur! At cum soluta, sit, dicta delectus id minima nihil magnam autem maiores consequatur repellat minus deserunt. Consequuntur assumenda ipsa pariatur saepe eius quos inventore, consequatur neque vitae repellat nemo adipisci tempora aut quidem ab quisquam mollitia laboriosam, sapiente alias aperiam expedita in. Unde assumenda nobis rem inventore eaque nemo saepe id sequi voluptas, officia explicabo, quaerat ipsa sunt voluptatum necessitatibus dicta, quas nesciunt! Eos voluptate officia obcaecati? Reiciendis temporibus consectetur, doloremque ullam maxime tempora officia, earum atque quisquam vel quam facilis ratione quas neque placeat repellat incidunt quis, sequi sint aperiam dicta eos voluptate vitae. Consequatur magnam, amet hic sint reiciendis aliquam. Tempora iusto consequatur veniam, labore quibusdam non omnis quia sunt dolore similique. Officiis sunt accusantium, ad. A voluptatum maxime explicabo aspernatur cumque dignissimos, illo aperiam magni soluta, placeat possimus deserunt nulla eligendi minima eveniet odio asperiores! Quo, optio. Incidunt ratione eaque, sit placeat! Quasi itaque esse consectetur qui, cumque iure magni porro cupiditate sit atque praesentium totam, rem, repellat soluta quis! Officia adipisci repellat placeat, incidunt. Reiciendis veritatis ipsa iusto aperiam? Placeat, eligendi. Consequuntur eius, omnis quos deleniti. Itaque, quo ipsam suscipit molestiae! At, delectus fuga error accusamus sed aut dolorem in quod, animi aspernatur itaque, doloribus tenetur eum sunt excepturi natus modi fugiat hic omnis doloremque, praesentium. Tempore cumque exercitationem dolores in eum facere, at et suscipit numquam est minima tenetur ea a qui harum magni dignissimos animi eaque velit, molestias quo quod cum, sint aliquam ex. Repudiandae porro adipisci sunt eum cupiditate eligendi tempora iure molestias. Eum obcaecati dolore, deserunt, eaque quod soluta cupiditate voluptas ea velit tempora dolorum fugit nulla nemo esse maxime libero quam! Mollitia, omnis. Ex quasi id voluptate officiis! Culpa soluta exercitationem quae corrupti blanditiis cum officia quia unde voluptas omnis nam, cupiditate, quis, amet suscipit error ducimus rerum eum. Dolor illo, totam, explicabo, harum odit nostrum nulla assumenda cupiditate fugiat ab cumque blanditiis. Repudiandae suscipit culpa, iste excepturi, sequi enim laboriosam provident saepe ipsam temporibus aut iusto adipisci cupiditate harum voluptas doloremque odio recusandae officia, eos aspernatur eligendi! Neque perspiciatis vel a nobis, quaerat fugit fuga tempora, facere maiores nesciunt blanditiis. Eligendi deserunt, molestias possimus suscipit saepe dolores aspernatur reiciendis. Similique rem ipsum, sunt officia ab quasi cupiditate voluptatem dolores placeat quidem. Mollitia nam ab blanditiis est culpa enim alias ratione excepturi, veniam sequi odio dolorum a, quasi cum beatae error! Praesentium unde, quod. Obcaecati officiis sit nulla odio sapiente non est corrupti delectus placeat veniam ab distinctio eveniet animi nesciunt ut, ratione aliquid tenetur nostrum eius laboriosam deserunt. Dolore nisi soluta esse harum, facere veritatis suscipit ea asperiores tempora dolorem, ad mollitia modi adipisci nostrum? Suscipit placeat nemo voluptatem, ea, beatae consequuntur molestiae vitae blanditiis et impedit modi totam cupiditate libero quas hic, tempore illo saepe quia repellat voluptatibus. Facere cupiditate, praesentium ullam similique nemo, ea laudantium sequi dolorem molestiae voluptate ipsum voluptatibus, dignissimos. Amet illo ab deleniti velit laudantium doloremque consequuntur nam alias itaque distinctio. Totam suscipit aspernatur unde placeat voluptatum, vel magni similique porro ipsum delectus doloremque officiis aut illum expedita, quae officia error maiores animi esse, voluptate. Saepe mollitia, animi repellendus, ducimus odit quis similique itaque tenetur maxime. Repellendus alias iste non modi. Velit provident culpa ipsa ratione, tenetur inventore ex harum quis expedita explicabo perspiciatis, sed officiis natus reiciendis eligendi, repudiandae asperiores dicta reprehenderit? Ipsum officiis dignissimos voluptas incidunt. Error officia, vitae iure aut corrupti eligendi architecto itaque. Harum porro possimus omnis exercitationem quaerat mollitia, labore esse minima reprehenderit quos nulla facilis perferendis velit delectus ducimus natus laudantium quo nisi consequuntur magni unde fuga repellendus. Nobis tempore vel, officiis blanditiis voluptatum ad, dignissimos, eum ab debitis adipisci eveniet, quae ducimus nulla hic. Doloremque nulla sed voluptate eveniet fugiat rerum dolorem tempora fugit qui odio aliquid veniam suscipit atque molestias delectus quis facilis laudantium totam, assumenda aliquam? Incidunt, accusamus. Quibusdam sint in corporis repudiandae consectetur illum cupiditate quasi atque, ipsa quam doloribus. Quod consequatur dolor ex nulla, tenetur doloremque laudantium recusandae, vero sapiente odit rerum, possimus! Sapiente dignissimos non molestias alias at, voluptatibus, quos illo aliquid eum totam perferendis deleniti error, eaque fugit, dolore numquam maxime expedita voluptatem explicabo nihil laborum eius culpa! Vero ut labore nam libero voluptatibus, velit, minus at debitis cupiditate? Repudiandae necessitatibus odit, minus labore incidunt placeat nam eligendi optio distinctio sint, iusto, nostrum deleniti unde ab quod aperiam nulla cupiditate pariatur fugit a et. Maiores deleniti, quos in quas. Sunt, velit. Hic beatae porro animi similique numquam adipisci, itaque. Nulla laboriosam voluptas quis, rerum accusantium, excepturi corporis blanditiis deleniti sapiente rem consequatur incidunt dolorum magnam quasi, vero cumque necessitatibus facilis alias quidem suscipit amet expedita enim ullam! Maiores magni at dolore sed, fuga quas ipsa suscipit dolor! Delectus adipisci, voluptas, dicta eum quia facilis.
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores ipsa eum facilis dignissimos quis minima laudantium perspiciatis perferendis hic aliquid? Vero perferendis, harum. Modi ea eos molestiae laboriosam odio quisquam dignissimos tempora, alias mollitia dolores, porro quae, debitis distinctio voluptate quidem dicta aliquid a odit provident repudiandae magnam assumenda illo tempore necessitatibus, iusto! Laborum natus repellendus in eius eligendi quam consectetur illum quis itaque ab. Alias at deserunt, quae ex non aut, maiores? Quos cumque nobis, ipsum est eaque voluptates officiis ipsam nisi odio dolorem, aliquam, quisquam assumenda cum possimus expedita obcaecati repellat ut temporibus excepturi. Voluptates velit hic tempore aliquam facilis laboriosam aspernatur sint recusandae architecto libero doloribus, neque ea qui, voluptas perferendis corporis. Fuga veritatis maxime recusandae cupiditate, nihil eligendi fugit, maiores. Impedit possimus magnam, mollitia eum odio quasi eligendi velit nobis, tenetur veniam quos voluptatum non nemo quas, quibusdam consectetur. Asperiores aut facere aliquid voluptatibus fugit incidunt?
 				</p>
 			</div>
+			
 		</main>
-
-
-
+		<footer class="footer">
+			<div class="footer__top">
+				<a href="#" class="logo-footer">
+					<img src="images/logo-mobile.png" alt="">
+				</a>
+				<div class="footer-links">
+					<ul>
+						<li>
+							<a href="#">Все новости</a>
+						</li>
+						<li>
+							<a href="#">Серверы</a>
+						</li>
+						<li>
+							<a href="#">Статистика</a>
+						</li>
+						<li>
+							<a href="#">Форум</a>
+						</li>
+					</ul>
+				</div>
+				<div class="contacts">
+					<h3>Контакты</h3>
+					<div class="contacts__list">
+						<div class="contacts__item">
+							<a href="mailto:support@zo-zo.org" class="">
+								<img src="images/mail.svg" alt="">
+								<span>
+									support@zo-zo.org
+								</span>
+							</a>
+						</div>
+						<div class="contacts__item">
+							<a href="https://vk.com/zozo_group" target="_blank">
+								<img src="images/social/vk.svg" alt="">
+								<span>vk.com/zozo_group</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<p>
+					<a href="#">/.ZoZo./ Zombie Zone Portal</a> © 2010-2020
+				</p>
+				<p>
+					<span class="admins">
+						<a href="#">RaSTa_FaR_I</a>, <a href="#">AntiQar</a>, <a href="#">Spumer</a>
+					</span>
+				</p>
+				<p>Копирование материалов сайта разрешается только при указании активной индексируемой ссылки на источник</p>
+			</div>
+		</footer>
 	</div>
+
+
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
 </body>
