@@ -623,15 +623,18 @@ a {
         display: block; }
   .monitoring__row-left {
     width: 100%;
-    max-width: 78%;
+    max-width: -webkit-calc(100% - 70px);
+    max-width: calc(100% - 70px);
+    width: auto;
     text-align: left; }
   .monitoring__row-right span {
     white-space: nowrap; }
 
-.top-players {
+.top-players__title {
   text-align: center;
-  font-size: 13px; }
-  .top-players a {
+  padding: 10px 0; }
+  .top-players__title a {
+    font-size: 16px;
     color: #000; }
 
 .specials__trigger {
@@ -653,6 +656,136 @@ a {
     display: block;
     -webkit-animation: tabAnim linear 0.2s forwards;
             animation: tabAnim linear 0.2s forwards; }
+
+.servers-tabs {
+  width: 220px;
+  border: none; }
+
+.tabs__btn {
+  padding: 8px 10px;
+  border-radius: 3px;
+  margin-bottom: 2px; }
+  .tabs__btn:hover {
+    background-color: #E6EADE; }
+  .tabs__btn .server__title {
+    font-size: 15px;
+    font-weight: bold; }
+
+.servers-content {
+  width: -webkit-calc(100% - 220px);
+  width: calc(100% - 220px); }
+
+.server.active {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.server__top {
+  float: none;
+  -webkit-box-ordinal-group: 0;
+  -webkit-order: -1;
+      -ms-flex-order: -1;
+          order: -1;
+  width: 100%;
+  padding-bottom: 20px; }
+
+.server__left {
+  float: none;
+  width: 100%;
+  padding-right: 20px; }
+
+.monitoring {
+  max-height: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.monitoring__img {
+  width: 80%;
+  margin: 0 auto 20px; }
+
+.monitoring__current {
+  width: 80%;
+  margin: 0 auto; }
+
+.monitoring__header {
+  width: 100%; }
+  .monitoring__header .monitoring__row {
+    margin-bottom: 8px; }
+    .monitoring__header .monitoring__row span {
+      font-size: 16px; }
+
+.monitoring__body {
+  width: 50%;
+  padding-right: 10px; }
+
+.top-players {
+  width: 50%;
+  padding-left: 10px; }
+
+.server__right {
+  width: 100%;
+  padding-left: 0;
+  margin-top: 30px; }
+
+.monitoring__body .monitoring__row a span, .top-players .monitoring__row a span {
+  font-size: 14px; }
+
+.specials__trigger {
+  display: block;
+  text-align: center;
+  position: relative;
+  font-size: 14px;
+  line-height: 18px; }
+  .specials__trigger.active span:after {
+    -webkit-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+            transform: rotate(-180deg); }
+  .specials__trigger span {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer; }
+    .specials__trigger span:after {
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
+      content: '';
+      width: 10px;
+      height: 7px;
+      background-image: url(../images/arrow_green.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: block;
+      margin-left: 8px; }
+
+.specials__list {
+  display: none;
+  margin-top: 25px; }
+
+.specials {
+  margin-bottom: 20px; }
+
+.server__trigger h2 {
+  margin-bottom: 10px; }
+
+.server__link h3 {
+  margin-bottom: 0; }
 
 @media only screen and (max-width: 991px) {
   .main {
@@ -938,6 +1071,8 @@ a {
         display: block;
         -webkit-animation: tabAnim linear 0.2s forwards;
                 animation: tabAnim linear 0.2s forwards; }
+      .server.is_active .server__top {
+        background-color: rgba(129, 173, 132, 0.2); }
       .server.is_active .server__trigger:after {
         -webkit-transform: rotate(-180deg);
             -ms-transform: rotate(-180deg);
@@ -959,7 +1094,8 @@ a {
       padding: 0; }
     .server__right {
       width: 100%;
-      padding-left: 0; }
+      padding-left: 0;
+      margin-top: 10px; }
     .server__left, .server__right, .server__link {
       display: none; }
     .server__trigger {
@@ -972,7 +1108,7 @@ a {
           -ms-flex-align: center;
               align-items: center;
       position: relative;
-      padding-right: 40px;
+      padding: 8px 40px 8px 8px;
       cursor: pointer; }
       .server__trigger:after {
         position: absolute;
@@ -984,7 +1120,7 @@ a {
         height: 9px;
         background-image: url("../images/arrow_green.svg");
         right: 10px;
-        top: 8px;
+        top: 16px;
         background-repeat: no-repeat;
         background-size: cover; }
       .server__trigger h2 {
@@ -1026,8 +1162,7 @@ a {
                 transform: translateX(-50%); }
     .monitoring__body {
       width: 50%;
-      padding-right: 8px;
-      padding-top: 25px; }
+      padding-right: 8px; }
     .monitoring__img {
       width: 50%; }
     .monitoring__current {
@@ -1045,42 +1180,8 @@ a {
       width: 50%;
       padding-left: 8px; }
   .specials {
-    margin-top: 20px; }
-  .specials__trigger {
-    display: block;
-    text-align: center;
-    position: relative;
-    font-size: 14px;
-    line-height: 18px; }
-    .specials__trigger.active span:after {
-      -webkit-transform: rotate(-180deg);
-          -ms-transform: rotate(-180deg);
-              transform: rotate(-180deg); }
-    .specials__trigger span {
-      display: -webkit-inline-box;
-      display: -webkit-inline-flex;
-      display: -ms-inline-flexbox;
-      display: inline-flex;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      cursor: pointer; }
-      .specials__trigger span:after {
-        -webkit-transition: all 0.2s;
-        -o-transition: all 0.2s;
-        transition: all 0.2s;
-        content: '';
-        width: 10px;
-        height: 7px;
-        background-image: url(../images/arrow_green.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: block;
-        margin-left: 8px; }
-  .specials__list {
-    display: none;
-    margin-top: 25px; } }
+    margin-top: 10px;
+    margin-bottom: 0; } }
 
 @media only screen and (max-width: 767px) {
   .wrapper {
@@ -1118,7 +1219,7 @@ a {
     .server__trigger h2 {
       font-size: 16px; }
   .monitoring__body {
-    padding-top: 15px;
+    padding-top: 0px;
     width: 100%;
     padding-right: 0;
     margin-bottom: 25px; }
