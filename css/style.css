@@ -143,7 +143,7 @@ a {
 
 .jumbotron {
   background-color: #FFFAFA;
-  padding: 10px;
+  padding: 20px;
   border-radius: 5px;
   -webkit-box-shadow: 0 0 6px 3px #ddd;
           box-shadow: 0 0 6px 3px #ddd; }
@@ -698,7 +698,8 @@ a {
 .server__left {
   float: none;
   width: 100%;
-  padding-right: 20px; }
+  padding-right: 20px;
+  padding-left: 40px; }
 
 .monitoring {
   max-height: none;
@@ -724,7 +725,6 @@ a {
     margin-bottom: 8px; }
     .monitoring__header .monitoring__row span {
       font-size: 16px; }
-
 
 .monitoring__body {
   width: 50%;
@@ -787,6 +787,208 @@ a {
 
 .server__link h3 {
   margin-bottom: 0; }
+
+.tab__content {
+  display: none; }
+  .tab__content.active {
+    display: block;
+    -webkit-animation: tabAnim linear 0.2s forwards;
+            animation: tabAnim linear 0.2s forwards; }
+
+.variant__btns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px; }
+
+.variant__btn {
+  height: 40px;
+  padding: 0 20px;
+  background-color: #ddd;
+  border-radius: 2px;
+  margin-right: 40px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer; }
+  .variant__btn.active {
+    background-color: #5a845a; }
+
+.tab__content_second .monitoring__header {
+  width: 50%;
+  padding-right: 20px; }
+
+.tab__content_second .monitoring__img, .tab__content_second .monitoring__current {
+  width: 100%; }
+
+.tab__content_second .server__left {
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  padding-bottom: 40px; }
+  .tab__content_second .server__left:before {
+    content: '';
+    width: 80%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background-color: #ddd; }
+
+.tab__content_second .top-players__title {
+  display: none; }
+
+.tab__content_second .monitoring__body {
+  padding-right: 0;
+  width: 100%; }
+
+.tab__content_second .top-players {
+  padding-left: 0;
+  width: 100%; }
+
+.tab__content_second .specials__trigger {
+  pointer-events: none; }
+  .tab__content_second .specials__trigger span {
+    font-size: 20px; }
+    .tab__content_second .specials__trigger span:after {
+      display: none; }
+
+.tab__content_second .specials__list {
+  display: block; }
+
+.tab__content_second .server__top {
+  padding-bottom: 0;
+  margin-bottom: 50px; }
+
+.tab__content_second .monitoring__current {
+  border-bottom: 0; }
+
+.mon-tabs {
+  width: 50%; }
+  .mon-tabs__btns {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 30px; }
+  .mon-tabs__btn {
+    width: 48%;
+    background-color: #ddd;
+    border-radius: 3px;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer;
+    padding: 12px 0; }
+    .mon-tabs__btn.active {
+      background-color: #507450;
+      color: #fff; }
+  .mon-tabs__item {
+    display: none; }
+    .mon-tabs__item.active {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-animation: tabAnim linear 0.2s forwards;
+              animation: tabAnim linear 0.2s forwards; }
+
+.mon-tabs .monitoring__row a span, .mon-tabs .monitoring__row-right span {
+  font-size: 15px; }
+
+.mon-tabs .monitoring__row {
+  padding: 4px 0; }
+
+@media only screen and (max-width: 991px) {
+  .tab__content_second .server__top {
+    margin-bottom: 0; }
+  .tab__content_second .server__left {
+    margin-top: 40px !important; }
+  .tab__content_second .monitoring__header {
+    width: 100%;
+    padding-right: 0; }
+  .tab__content_second .mon-tabs {
+    width: 100%; }
+  .tab__content_second .mon-tabs__btns {
+    display: none; }
+  .tab__content_second .mon-tabs__content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .tab__content_second .mon-tabs__item {
+    display: block !important;
+    width: -webkit-calc(50% - 10px);
+    width: calc(50% - 10px); }
+  .tab__content_second .top-players {
+    width: 100% !important;
+    padding: 0; }
+  .tab__content_second .top-players__title {
+    display: block;
+    margin-bottom: 15px; }
+    .tab__content_second .top-players__title a {
+      pointer-events: none; }
+  .tab__content_second .specials__list {
+    display: none; }
+  .tab__content_second .specials__trigger {
+    display: block;
+    pointer-events: auto; }
+    .tab__content_second .specials__trigger span:after {
+      display: block;
+      margin-top: 6px; } }
+
+@media only screen and (max-width: 575px) {
+  .tab__content_second .server__left {
+    padding-bottom: 0;
+    margin-top: 30px !important; }
+  .tab__content_second .mon-tabs__content {
+    display: block; }
+  .tab__content_second .mon-tabs__item {
+    width: 100%;
+    cursor: pointer; }
+  .tab__content_second .mon-tabs {
+    padding-top: 10px; }
+  .tab__content_second .monitoring__body .top-players__title {
+    pointer-events: none;
+    cursor: default; }
+    .tab__content_second .monitoring__body .top-players__title a:after {
+      display: none; }
+  .tab__content_second .specials__trigger span {
+    font-size: 16px; } }
 
 @media only screen and (max-width: 991px) {
   .main {

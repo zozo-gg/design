@@ -97,7 +97,36 @@ $(document).ready(function() {
 
 
 
+	$('.variant__btn').on('click',function(event) {
+		var 	$this = $(this),
+				tabContainer = $this.closest('.variant'),
+				tabContentItem = tabContainer.find('.tab__content'),
+				ndx = $this.index(),
+				reqItem = tabContentItem.eq(ndx);
 
+		$this.addClass('active')
+			.siblings()
+			.removeClass('active');
+
+		tabContentItem.removeClass('active');
+		reqItem.addClass('active');
+	});
+
+
+	$('.mon-tabs__btn').on('click',function(event) {
+		var 	$this = $(this),
+				tabContainer = $this.closest('.mon-tabs'),
+				tabContentItem = tabContainer.find('.mon-tabs__item'),
+				ndx = $this.index(),
+				reqItem = tabContentItem.eq(ndx);
+
+		$this.addClass('active')
+			.siblings()
+			.removeClass('active');
+
+		tabContentItem.removeClass('active');
+		reqItem.addClass('active');
+	});
 
 
 
