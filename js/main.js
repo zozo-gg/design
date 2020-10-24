@@ -130,4 +130,18 @@ $(document).ready(function() {
 
 
 
+
+	$('.jsSlider').slick({
+		dots: true,
+	  infinite: false,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  adaptiveHeight: true,
+	  // appendArrows: ".slider-arrows",
+		prevArrow: '<button type="button" class="slider__btn slider__btn_prev"> <span class="icon-arrow_left"></span></button>' ,
+		nextArrow: '<button type="button" class="slider__btn slider__btn_next"> <span class="icon-arrow_right"></button>', 
+	});
+
+
+
 });
