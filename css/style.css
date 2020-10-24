@@ -1563,6 +1563,75 @@ template {
   .tab__content_second .mon-tabs__btn {
     font-size: 12px; } }
 
+.tab__content_third .monitoring__header {
+  width: 100%;
+  padding-right: 0;
+  position: relative;
+  margin-bottom: 50px; }
+
+.tab__content_third .monitoring__img {
+  width: 50%;
+  margin-bottom: 0;
+  float: left;
+  padding-right: 15px; }
+
+.tab__content_third .monitoring__info {
+  width: 50%;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 35px;
+  float: right;
+  padding-left: 15px; }
+
+.tab__content_third .monitoring__current {
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-left: 15px; }
+
+.tab__content_third .mon-tabs {
+  width: 100%; }
+
+.tab__content_third .mon-tabs__btn {
+  border-right: 1px solid #fff;
+  margin-right: 35px; }
+
+.tab__content_third .monitoring__body {
+  width: 50%;
+  padding-right: 15px; }
+
+.tab__content_third .top-players {
+  padding-left: 15px; }
+
+.tab__content_third .specials {
+  width: 100%; }
+
+.tab__content_third .mon-tabs__btns {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 20px; }
+
+.tab__content_third .mon-tabs__btn {
+  width: auto;
+  padding: 12px 24px; }
+
+.tab__content_third .top-players__title {
+  display: block; }
+
+.variant__btns {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .variant__btns .variant__btn {
+    margin-bottom: 20px;
+    width: 150px;
+    margin-right: 0; }
+
 @media only screen and (max-width: 991px) {
   .main {
     padding-top: 70px; }
