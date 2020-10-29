@@ -1632,6 +1632,13 @@ template {
     width: 150px;
     margin-right: 0; }
 
+.tab__content_five .server__top {
+  margin-bottom: 20px; }
+
+.tab__content_five .mon-tabs__content {
+  height: 310px;
+  overflow: auto; }
+
 @media only screen and (max-width: 991px) {
   .main {
     padding-top: 70px; }
