@@ -888,7 +888,27 @@ template {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
-          flex: 0 0 auto; }
+          flex: 0 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .footer__left, .footer__right {
+    width: 50%;
+    min-width: 50%; }
+  .footer__right {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .footer a, .footer p {
     color: #fff; }
 
@@ -903,16 +923,20 @@ template {
           justify-content: space-between;
   margin-bottom: 35px; }
 
-.footer__bottom p {
-  text-align: center; }
-  .footer__bottom p:last-of-type {
+.footer__bottom p, .footer__left p {
+  text-align: left; }
+  .footer__bottom p:last-of-type, .footer__left p:last-of-type {
     margin-bottom: 0; }
 
-.footer__bottom a {
+.footer__bottom a, .footer__left a {
   color: #CCF3B6; }
 
-.footer__bottom p, .footer__bottom a {
+.footer__bottom p, .footer__bottom a, .footer__left p, .footer__left a {
   font-size: 15px; }
+
+.logo-footer {
+  margin-bottom: 25px;
+  display: inline-block; }
 
 .contacts h3 {
   margin-bottom: 15px; }
@@ -971,7 +995,16 @@ template {
   font-size: 20px; }
 
 .server__link {
-  text-align: center; }
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15px; }
   .server__link h3 {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -979,7 +1012,31 @@ template {
     display: inline-flex;
     width: auto;
     color: #04acec;
-    border: 1px solid #000; }
+    margin-bottom: 0;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 18px; }
+  .server__link a {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    background-color: #000;
+    border-radius: 3px;
+    padding: 0px 10px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 15px;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s; }
+    .server__link a:hover {
+      text-decoration: none;
+      opacity: 0.7; }
 
 .server__title {
   display: -webkit-box;
@@ -1092,8 +1149,9 @@ template {
 .col__left {
   width: 65%;
   padding: 0 15px; }
-  .col__left .jumbotron {
-    padding: 20px 0; }
+
+.jumbotron_slider {
+  padding: 30px 0; }
 
 .col__right {
   width: 35%;
@@ -1101,7 +1159,11 @@ template {
 
 .slide {
   position: relative;
-  padding: 0 15px; }
+  padding: 0 20px; }
+  .slide:hover {
+    text-decoration: none; }
+    .slide:hover .slide__desc p {
+      text-decoration: underline; }
   .slide img {
     width: 100%;
     max-width: 100%; }
@@ -1128,6 +1190,9 @@ template {
   .slide__date {
     color: #ccc;
     font-size: 14px; }
+  .slide__desc p {
+    color: #000;
+    line-height: 22px; }
 
 .slick-dots {
   display: -webkit-box;
@@ -1175,6 +1240,35 @@ template {
 
 .slider__btn_next {
   right: -10px; }
+
+.announcement__title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px; }
+
+.announcement__inner {
+  font-size: 18px;
+  font-weight: 800; }
+  .announcement__inner p {
+    margin-bottom: 0;
+    text-align: center; }
+
+.announcement__btn {
+  background-color: #5a845a;
+  padding: 6px 15px;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
+  .announcement__btn:hover {
+    text-decoration: none;
+    opacity: 0.8; }
 
 .servers-tabs {
   width: 220px;
@@ -1303,9 +1397,6 @@ template {
 
 .server__trigger h2 {
   margin-bottom: 10px; }
-
-.server__link h3 {
-  margin-bottom: 0; }
 
 .tab__content {
   display: none; }
@@ -1632,12 +1723,33 @@ template {
     width: 150px;
     margin-right: 0; }
 
+.tab__content_forth_alone .server__top {
+  margin-bottom: 25px; }
+
+.tab__content_forth_alone .mon-tabs__btns {
+  margin-bottom: 40px; }
+
 .tab__content_five .server__top {
   margin-bottom: 20px; }
 
 .tab__content_five .mon-tabs__content {
   height: 310px;
   overflow: auto; }
+
+.tab__content_six .monitoring {
+  display: block; }
+  .tab__content_six .monitoring .monitoring__header {
+    width: 80%;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto; }
+  .tab__content_six .monitoring .mon-tabs {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; }
+
+.tab__content_six .server__top {
+  margin-bottom: 40px; }
 
 @media only screen and (max-width: 991px) {
   .main {
@@ -2054,7 +2166,8 @@ template {
   .slide__date {
     margin-bottom: 4px; }
   .slide__desc p {
-    font-size: 14px; }
+    font-size: 14px;
+    line-height: 20px; }
   .slider__btn {
     margin-top: -60px; } }
 
@@ -2066,7 +2179,19 @@ template {
   .footer {
     margin-left: -15px;
     margin-right: -15px;
-    border-radius: 0; }
+    border-radius: 0;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .footer__left, .footer__right {
+      width: 100%; }
+    .footer__right {
+      -webkit-box-ordinal-group: 0;
+      -webkit-order: -1;
+          -ms-flex-order: -1;
+              order: -1;
+      display: block;
+      margin-bottom: 35px; }
     .footer__top {
       margin-bottom: 40px; }
   .logo-footer {
@@ -2154,7 +2279,11 @@ template {
       background-repeat: no-repeat;
       background-size: cover;
       display: block;
-      margin-left: 8px; } }
+      margin-left: 8px; }
+  .jumbotron_slider {
+    padding: 20px 0; }
+  .slide {
+    padding: 0 15px; } }
 
 @media only screen and (max-width: 479px) {
   .server__left {
